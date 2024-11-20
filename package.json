@@ -1,25 +1,26 @@
 {
-  "name": "joomla-skeleton",
-  "version": "1.0.0",
-  "description": "Skeleton Joomla Template",
-  "main": "index.js",
-  "repository": "git@github.com:projetos-de-software/joomla-skeleton.git",
-  "author": "Marcos de Lima Carlos <mlimacarlos@gmail.com>",
-  "license": "MIT",
-  "devDependencies": {
-    "@commitlint/cli": "^19.6.0",
-    "@commitlint/config-conventional": "^19.6.0",
-    "commitizen": "^4.3.1",
-    "cz-conventional-changelog": "^3.3.0",
-    "husky": "^9.1.7"
-  },
-  "scripts": {
-    "prepare": "husky",
-    "commit": "git-cz"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+    "name": "joomla-skeleton",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "git@github.com:projetos-de-software/joomla-skeleton.git",
+    "author": "Marcos de Lima Carlos <mlimacarlos@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "@commitlint/cli": "^19.6.0",
+        "@commitlint/config-conventional": "^19.6.0",
+        "commitizen": "^4.3.1",
+        "cz-conventional-changelog": "^3.3.0",
+        "husky": "^9.1.7",
+        "standard-version": "^9.5.0"
+    },
+    "scripts": {
+        "prepare": "husky",
+        "commit": "git-cz",
+        "release": "standard-version"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
     }
-  }
 }
