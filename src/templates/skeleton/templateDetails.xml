@@ -1,1 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+    URL de referência: https://manual.joomla.org/docs/building-extensions/install-update/installation/manifest/
+-->
+<extension type="template" client="site" method="upgrade">
+    <name>proj-skeleton</name>
+    <version>0.1.0</version>
+    <creationDate>2024-11</creationDate>
+    <author>Projetos de Software</author>
+    <copyright>(C) Projetos de Software</copyright>
+    <description>TPL_PROJ_SKELETON_DESC</description>
+    <inheritable>1</inheritable>
+
+    <!--Arquivos Principais-->
+    <files>
+        <filename>index.php</filename>
+        <filename>joomla.asset.json</filename>
+        <folder>html</folder>
+    </files>
+    <!-- Fim -->
+
+    <!-- Arquivos CSS e Javascript-->
+    <media destination="" folder="media">
+
+    </media>
+    <!-- Fim -->
+
+    <!-- Arquivo de Idiomas-->
+    <language folder="language">
+
+    </language>
+    <!-- Fim -->
+
+    <!-- Posições do Template-->
+    <positions>
+        <position></position>
+    </positions>
+    <!-- Fim -->
+
+    <!-- Tela de Config - Administrador -->
+    <config>
+
+
+        <fields name="params">
+            <fieldset name="test">
+                
+                <field
+                    name=""
+                    type=""
+                    label=""
+                    default=""
+                    layout=""
+                    filter=""
+                >
+
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+    <!-- FIM -->
+
+    <!-- Modificar isso depois -->
+    <updateservers>
+        <server type="extension" priority="1" name="">
+            url_arquivo
+        </server>
+    </updateservers>
+    <!-- Fim -->
+</extension>
