@@ -1,11 +1,12 @@
 skeleton:
     documentação:
-        ☐ TODO: templateDetails.xml documentação @high
         ☐ TODO: update xml schema @high
+        ☐ TODO: Instalando o template @high
     projeto:
         ☐ TODO: XML de introdução ao template
-        ☐ TODO: Adicionar o bootstrap 5 @high
+        ✔ TODO: Adicionar o bootstrap 5 @high @done(24-12-19 13:42)
     infra:
-        ☐ TODO: Arquivo bash de Geração de template @high
+        ☐ TODO: arquivo node para geração de pacote @high
 Archive:
+  ✔ TODO: templateDetails.xml documentação @high @done(24-12-05 18:57) @project(skeleton.documentação)
   ✔ TODO: Adicionar explicação da estrutura de pasta @high @done(24-12-01 10:36) @project(skeleton.documentação)

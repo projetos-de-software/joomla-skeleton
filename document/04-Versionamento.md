@@ -17,5 +17,3 @@ Dado um número de versão MAJOR.MINOR.PATCH, incremente a:
 - versão de Correção(PATCH): quando corrigir falhas mantendo compatibilidade.
 
 Rótulos adicionais para pré-lançamento(pre-release) e metadados de construção(build) estão disponíveis como extensão ao formato MAJOR.MINOR.PATCH.
-
-

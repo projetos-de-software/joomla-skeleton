@@ -2,15 +2,18 @@
 
 <!-- 
     URL de referência: https://manual.joomla.org/docs/building-extensions/install-update/installation/manifest/
+    URL 2 - https://manual.joomla.org/docs/building-extensions/install-update/installation/manifest/
 -->
+
 <extension type="template" client="site" method="upgrade">
-    <name>proj-skeleton</name>
+    <name>skeleton</name>
     <version>0.1.0</version>
     <creationDate>2024-11</creationDate>
     <author>Projetos de Software</author>
     <copyright>(C) Projetos de Software</copyright>
     <description>TPL_PROJ_SKELETON_DESC</description>
     <inheritable>1</inheritable>
+    <scriptfile>script.php</scriptfile>
 
     <!--Arquivos Principais-->
     <files>
@@ -20,21 +23,36 @@
     </files>
     <!-- Fim -->
 
-    <!-- Arquivos CSS e Javascript-->
-    <media destination="" folder="media">
-
+    <!-- Arquivos CSS, Javascript e imagens utilizadas -->
+    <media destination="templates/sites/skeleton" folder="media">
+        <folder>js</folder>
+		<folder>css</folder>
+		<folder>scss</folder>
+		<folder>images</folder>
     </media>
     <!-- Fim -->
 
     <!-- Arquivo de Idiomas-->
     <language folder="language">
-
+        <language tag="pt-BR">pt-BR/tpl_skeleton.ini</language>
+		<language tag="pt-BR">pt-BR/tpl_skeleton.sys.ini</language>
     </language>
     <!-- Fim -->
 
     <!-- Posições do Template-->
     <positions>
-        <position></position>
+        <!-- Menu superior -->
+        <position>topbar</position>
+        <position>menu</position>
+        <position>body-1</position>
+        <position>body-2</position>
+        <position>footer</position>
+        <position>debug</position>
+
+        <!-- Error.php -->
+        <position>error-403</position>
+        <position>error-404</position>
+
     </positions>
     <!-- Fim -->
 
@@ -46,15 +64,16 @@
             <fieldset name="test">
                 
                 <field
-                    name=""
-                    type=""
-                    label=""
-                    default=""
-                    layout=""
-                    filter=""
-                >
-
-                </field>
+					name="testparam"
+					type="radio"
+					label="TPL_PROJ_SKELETON_TEST_LABEL"
+					default="1"
+					layout="joomla.form.field.radio.switcher"
+					filter="boolean"
+					>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
             </fieldset>
         </fields>
     </config>
@@ -63,8 +82,9 @@
     <!-- Modificar isso depois -->
     <updateservers>
         <server type="extension" priority="1" name="">
-            url_arquivo
+            
         </server>
     </updateservers>
     <!-- Fim -->
+
 </extension>
