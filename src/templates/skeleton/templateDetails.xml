@@ -42,11 +42,13 @@
     <!-- Posições do Template-->
     <positions>
         <!-- Menu superior -->
-        <position>topbar</position>
-        <position>menu</position>
-        <position>body-1</position>
-        <position>body-2</position>
-        <position>footer</position>
+        <position>header</position>
+		<position>footer</position>
+		<position>sidebar</position>
+		<position>search</position>
+		<position>breadcrumbs</position>
+		<position>menu</position>
+		<position>content-top</position>
         <position>debug</position>
 
         <!-- Error.php -->
@@ -79,12 +81,12 @@
     </config>
     <!-- FIM -->
 
-    <!-- Modificar isso depois -->
-    <updateservers>
-        <server type="extension" priority="1" name="">
-            
-        </server>
-    </updateservers>
-    <!-- Fim -->
+    <!-- Modificar isso depois 
+        <updateservers>
+            <server type="extension" priority="1" name="">
+                
+            </server>
+        </updateservers>
+    -->
 
 </extension>

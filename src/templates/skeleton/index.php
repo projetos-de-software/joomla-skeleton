@@ -6,6 +6,8 @@
  * 
  *  @copyright 2024 Projetos de Software
  *  @license MIT
+ * 
+ *  based on joomla starter
  */
 
  define('_JEXEC') or die; 

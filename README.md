@@ -1,5 +1,9 @@
 # Template Skeleton para Joomla 4/5
 
+## Notas iniciais
+
+[Marcos]: # 'Colocar aqui a introdução do repositório de nomenclaturas'
+
 ## Introdução
 
 Este é um template skeleton para instalação e customização em Joomla 5. A versão atual do joomla (Dez de 2024) é a 5.2.
